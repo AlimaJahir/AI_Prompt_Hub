@@ -1,0 +1,177 @@
+body {
+    background-color: #0b0e14;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar-oda main styling */
+
+
+.navbar {
+    background: rgba(13, 13, 13, 0.8) !important; /* Semi-transparent dark background */
+    backdrop-filter: blur(15px); /* Indha line dhaan glass effect tharum */
+    -webkit-backdrop-filter: blur(15px); /* Safari compatibility-kaaga */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Methuvaana border */
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+/* Logo styling (AI PROMPT HUB) */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #00f2fe !important; /* Neon cyan color */
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
+}
+
+/* Nav links styling (Prompts, About, Contact) */
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+/* Mouse mela kondu pogum bodhu (Hover) */
+.nav-link:hover {
+    color: #00f2fe !important;
+    transform: translateY(-2px);
+}
+
+/* Active link (ippo entha page-la irukom-nu theriya) */
+.nav-link.active {
+    color: white !important;
+    border-bottom: 2px solid #00f2fe;
+}
+
+/* Mobile Toggler button (Menu icon) */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* Background Glow Effect */
+.background-glow {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 50%, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
+    opacity: 0.15;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Search Input Styling */
+.search-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+}
+
+.search-input::placeholder {
+     color:rgba(255, 255, 255, 0.256) !important;
+     opacity:1;
+}
+
+
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: #4facfe;
+    box-shadow: 0 0 15px rgba(113, 150, 182, 0.3);
+}
+
+/* Glassmorphism Card Effect */
+.prompt-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prompt-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.prompt-card h5 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.btn-outline-light {
+    border-radius: 20px;
+    font-size: 14px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contact Form Input & Textarea Styling */
+.form-control {
+    background: rgba(255, 255, 255, 0.05) !important; /* Search bar mathiri light transperent */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border-radius: 10px; /* Konjam rounded-ah irukum */
+    padding: 12px;
+}
+
+/* Click pannum pothu vara glow effect */
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #4facfe !important; /* Blue border */
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.4) !important; /* Glow effect */
+    outline: none;
+}
+
+/* Label text color-a matha (Email, Name, Message) */
+label {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%) !important;
+    border: none !important;
+    padding: 10px 30px !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.6);
+}
+
+.simple-footer {
+    background-color: #0d0d0d; /* Pure dark bg */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Very light border line */
+    padding: 20px 0;
+    width: 100%;
+}
+
+.simple-footer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.simple-footer small {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
